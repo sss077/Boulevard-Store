@@ -1,0 +1,218 @@
+@import url(./font.css);
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191717;
+    /* height: 4000px; */
+    z-index: 999;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* nav start */
+header {
+    background: #282828;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.nav__list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav__icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav__link {
+    color: #fff;
+    font-family: 'montserrat-b';
+    font-size: 20px;
+}
+
+
+/* nav end*/
+/* content start  */
+.header__content {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #151515 100%), url(../img/fon.png) no-repeat center center/ cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 100px;
+    font-family: 'one';
+    color: #ffff;
+    line-height: 75px
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 38px;
+}
+
+.heder__link {
+    font-size: 20px;
+    font-family: 'monsterrat-m';
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    background: #fff;
+    color: #171718;
+    padding: 13px 14px;
+    border-radius: 10px;
+    font-family: 'montserrat-m';
+    transition: .4s;
+}
+
+.heder__link:hover {
+    color: #fff;
+    background: #000;
+}
+
+.heder__link:hover.heder__link>img {
+    background: #fff;
+    border-radius: 6px;
+    animation: bgAnime linear .5s;
+}
+
+@keyframes bgAnime {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(25deg);
+    }
+
+    80% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* content end */
+
+/* produst start */
+.products{
+    padding-top: 30px;
+}
+  .products__cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 60px   ;
+  }
+  .products__card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .card__txt{
+    color: #fff;
+    font-family: 'montserrat-m';
+    font-size: 22px;
+    line-height: 27px;
+  }
+/* produst end */
+
+/* phones start */
+.phones{
+    padding-top: 79px;
+}
+.phones__cards{
+display: flex;
+gap: 30px;
+align-items: center;
+}
+.phones__card{
+    padding: 15px 47px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    row-gap: 10px;
+    border-radius: 6px;
+}
+.card__title{
+    font-family: 'montserrat-b';
+    font-size: 20px;
+    color: #000;
+}
+.phones__txt{
+    font-size: 14px;
+    font-family: 'montserrat-r';
+}
+.phones__btn{
+    margin-top: 10px;
+    background-color: #000;
+    padding: 7px 57px;
+    font-family: 'montserrat-b';
+    color: #fff;
+}
+ /* phones end */
+
+ /* footer start */
+ footer{
+    background: #282828;
+    padding: 80px 0;
+    margin-top: 55px;
+ }
+ .footer__content{
+    display: flex;
+    justify-content: space-between;
+   align-items: center; 
+}
+ .footer__list{
+    display: flex;
+    gap: 30px;
+ }
+ .footer__pay{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+ }
+ /* footer end */
