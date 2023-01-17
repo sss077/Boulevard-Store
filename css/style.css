@@ -85,7 +85,7 @@ header {
     row-gap: 38px;
 }
 
-.heder__link {
+.header__link {
     font-size: 20px;
     font-family: 'monsterrat-m';
     text-transform: uppercase;
@@ -98,14 +98,16 @@ header {
     border-radius: 10px;
     font-family: 'montserrat-m';
     transition: .4s;
+    opacity: 0 ;
+    transform: translateY(30px);
 }
 
-.heder__link:hover {
+.header__link:hover {
     color: #fff;
     background: #000;
 }
 
-.heder__link:hover.heder__link>img {
+.header__link:hover.header__link>img {
     background: #fff;
     border-radius: 6px;
     animation: bgAnime linear .5s;
@@ -132,7 +134,10 @@ header {
         transform: rotate(0deg);
     }
 }
-
+.header__link.active{
+    opacity: 1;
+    transform: translateY(0);
+}
 /* content end */
 
 /* produst start */
