@@ -167,15 +167,16 @@ header {
     line-height: 27px;
 }
 
-.right {
+.up {
     opacity: 0;
 }
 
-.right{
- transform: translate3d(0, 200px, 0) ;
+.up {
+    transform: translate3d(0, 200px, 0);
 }
-.right.active {
-transform: translate3d(0, 0, 0);
+
+.up.active {
+    transform: translate3d(0, 0, 0);
     opacity: 1;
 }
 
@@ -220,6 +221,16 @@ transform: translate3d(0, 0, 0);
     padding: 7px 57px;
     font-family: 'montserrat-b';
     color: #fff;
+}
+
+.right {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0;
+}
+
+.right.active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
 }
 
 /* phones end */
