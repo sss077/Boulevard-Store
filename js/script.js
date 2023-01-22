@@ -20,11 +20,33 @@ function linkAnime() {
     headerBtn.classList.add('active')
   }
 }
-setTimeout((x = 0 ) => {
-     if (x == 0) {
-      linkAnime()
-     }
-     else{
-      false
-     }
+setTimeout(() => {
+    linkAnime()
  }, 1500);
+
+//  let cardsProduct = document.querySelector('#card1');
+//  console.log((cardsProduct.offsetTop - cardsProduct.offsetHeight) / 2.5);
+// window.addEventListener('scroll', function () { 
+//   if(window.scrollY >= cardsProduct.offsetTop - cardsProduct.offsetHeight * 2 )    
+//   {
+//     console.log('yes');
+//   }
+//   else{
+//     console.log('no');
+//   }
+//  })
+let cards = document.querySelectorAll('.right');
+ cards.forEach(card => {
+  const speed = card.getAttribute('data-speed')
+  card.style.transition = `${speed}ms`
+  window.addEventListener('scroll', function () { 
+    if (window.scrollY >= card.offsetTop - card.offsetHeight * 2.1){
+    // console.log('yes');
+    card.classList.add('active')
+    }
+    else{
+     card.classList.remove('active')
+    //  console.log('no');
+    }
+   })
+ });

@@ -98,7 +98,7 @@ header {
     border-radius: 10px;
     font-family: 'montserrat-m';
     transition: .4s;
-    opacity: 0 ;
+    opacity: 0;
     transform: translateY(30px);
 }
 
@@ -134,90 +134,118 @@ header {
         transform: rotate(0deg);
     }
 }
-.header__link.active{
+
+.header__link.active {
     opacity: 1;
     transform: translateY(0);
 }
+
 /* content end */
 
 /* produst start */
-.products{
+.products {
     padding-top: 30px;
 }
-  .products__cards{
+
+.products__cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 60px   ;
-  }
-  .products__card{
+    gap: 60px;
+}
+
+.products__card {
     display: flex;
     align-items: center;
     gap: 30px;
-  }
-  .card__txt{
+}
+
+.card__txt {
     color: #fff;
     font-family: 'montserrat-m';
     font-size: 22px;
     line-height: 27px;
-  }
+}
+
+.right {
+    opacity: 0;
+}
+
+.right{
+ transform: translate3d(0, 200px, 0) ;
+}
+.right.active {
+transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
 /* produst end */
 
 /* phones start */
-.phones{
+.phones {
     padding-top: 79px;
 }
-.phones__cards{
-display: flex;
-gap: 30px;
-align-items: center;
+
+.phones__cards {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
-.phones__card{
+
+.phones__card {
     padding: 15px 47px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:  center;
+    justify-content: center;
     row-gap: 10px;
     border-radius: 6px;
 }
-.card__title{
+
+.card__title {
     font-family: 'montserrat-b';
     font-size: 20px;
     color: #000;
 }
-.phones__txt{
+
+.phones__txt {
     font-size: 14px;
     font-family: 'montserrat-r';
 }
-.phones__btn{
+
+.phones__btn {
     margin-top: 10px;
     background-color: #000;
     padding: 7px 57px;
     font-family: 'montserrat-b';
     color: #fff;
 }
- /* phones end */
 
- /* footer start */
- footer{
+/* phones end */
+
+/* footer start */
+footer {
     background: #282828;
     padding: 80px 0;
     margin-top: 55px;
- }
- .footer__content{
+}
+
+.footer__content {
     display: flex;
     justify-content: space-between;
-   align-items: center; 
+    align-items: center;
 }
- .footer__list{
+
+.footer__list {
     display: flex;
     gap: 30px;
- }
- .footer__pay{
+}
+
+.footer__pay {
     display: flex;
     gap: 30px;
     align-items: center;
- }
- /* footer end */
+}
+
+/* footer end */
